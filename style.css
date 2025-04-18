@@ -232,6 +232,7 @@ body{
     .main__section-image img{
         position: relative;
         min-width: 360px;
+        border-radius: 6px;
     }
 
     .nav__list-line--hidden{
