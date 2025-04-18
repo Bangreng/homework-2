@@ -338,6 +338,10 @@ body{
         padding-right: 8px;
     }
 
+    .main__section-about p:first-child{
+        padding-top: 8px;
+    }
+
     .main__section-image img{
         min-width: 532px;
         
