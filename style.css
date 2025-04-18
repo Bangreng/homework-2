@@ -159,7 +159,7 @@ body{
 
 .main__nav-list{
     display: flex;
-    overflow: hidden;
+    overflow: scroll;
     margin-top: 24px;
     margin-bottom: 24px;
 
