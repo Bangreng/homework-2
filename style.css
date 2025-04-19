@@ -72,19 +72,19 @@ body{
     display: block;
 }
 
-.icon_tel::before{
+.icon-tel::before{
     content: url(./img/icon/icon_tel.png);
     font-size: 0;
     line-height: 1;
 }
 
-.icon_message::before{
+.icon-message::before{
     content: url(./img/icon/icon_message.png);
     font-size: 0;
     line-height: 1;
 }
 
-.icon_user::before{
+.icon-user::before{
     content: url(./img/icon/header_user.png);
     font-size: 0;
     line-height: 1;
@@ -96,14 +96,14 @@ body{
     line-height: 1;
 }
 
-.icon_lupe::before{
+.icon-loupe::before{
 
-    content: url(./img/icon/icon_lupe.png);
+    content: url(./img/icon/icon_loupe.png);
     font-size: 0;
     line-height: 1;
 }
 
-.icon_work::before{
+.icon-work::before{
     content: url(./img/icon/icon_work.png);
     font-size: 0;
     line-height: 1;
@@ -339,7 +339,7 @@ body{
         font-family: 'TT Lakes Medium', 'Arial', sans-serif;
     }
 
-    .main__header-btn p{
+    .main__header-btn .text-btn{
         padding-right: 8px;
     }
 
