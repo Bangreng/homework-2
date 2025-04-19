@@ -34,10 +34,6 @@ body{
     background-color: #F8F8F8;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-}
 
 .wrapper{
     padding: 0 16px;
@@ -217,9 +213,12 @@ body{
     vertical-align: middle;
 }
 
+.main__section-image{
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
 .main__section-image img{
-    position: absolute;
-    left: 0;
     width: 100%;
 }
 
@@ -227,6 +226,10 @@ body{
     .wrapper{
         padding-right: 24px;
         padding-left: 24px;
+    }
+
+    .main__section-image{
+        margin: 0;
     }
 
     .main__section-image img{
@@ -257,10 +260,12 @@ body{
 
     .main__nav-list{
         margin-bottom: 32px;
+        margin-top: 32px;
     }
 
     .main__section-about{
     max-height: 160px;
+    margin-bottom: 10px;
     }
     .main__section-about p:first-child{
         padding-bottom: 20px;
@@ -288,7 +293,7 @@ body{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding-top: 42px;
+        margin-top: 42px;
         
     }
 
@@ -336,6 +341,10 @@ body{
 
     .main__header-btn p{
         padding-right: 8px;
+    }
+
+    .main__section-about {
+        margin-bottom: 14px;
     }
 
     .main__section-about p:first-child{
