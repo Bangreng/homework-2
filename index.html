@@ -12,18 +12,57 @@
     <header class="header">
         <div class="wrapper">
             <nav class="header__nav nav">
+                <div class="nav__list">
+                    <div class="burger">
+                        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                        <label for="burger-checkbox" class="icon-button burger icon_burger"></label>
+                        <nav class="burger-nav">
+                            <div class="wrapper__burger">
+                                <div class="burger-nav__header">
+                                    <ul class="burger-nav__section">
+                                        <li><label for="burger-checkbox" class="icon-button icon-close"></label></li>
+                                        <li><a href="#"><img src="img/icon/mobile_logo.png" alt=""></a></li>
+                                    </ul>
+                                    <ul class="burger-nav__section">
+                                        <li><button class="icon-button"><span class="icon-loupe-burger"></span></button></li>
+                                    </ul>
+                                </div>
+                                <ul class="burger-nav__list">
+                                    <li class="burger-nav__item"><a class="burger-nav__link burger-nav__link--active" href="#">Ремонтируемые бренды</a></li>
+                                    <li class="burger-nav__item"><a class="burger-nav__link" href="#">Ремонтируемые устройства</a></li>
+                                    <li class="burger-nav__item"><a class="burger-nav__link" href="#">Цены на услугу</a></li>
+                                    <li class="burger-nav__item"><a class="burger-nav__link" href="#">Адреса сервисных центров</a></li>
+                                    <li class="burger-nav__item"><a class="burger-nav__link" href="#">Специальные цены</a></li>
+                                    <li class="burger-nav__item"><a class="burger-nav__link" href="#">Отзывы</a></li>
+                                </ul>
+                                <footer class="footer-burger">
+                                    <div class="footer-burger__btn-icon">
+                                        <button class="icon-button"><span class="icon-tel"></span></button>
+                                        <button class="icon-button"><span class="icon-message"></span></button>
+                                        <button class="icon-button"><span class="icon-user"></span></button>
+                                    </div>
+                                    <p class="footer-burger__email-company">mail@cps.com</p>
+                                    <p class="number-company">8 800 890 8900</p>
+
+                                    <div class="language">
+                                        <button class="select-language">RU</button>
+                                        <button class="select-language">EN</button>
+                                        <button class="select-language">CH</button>
+                                    </div>
+                                </footer>
+                            </div>
+                        </nav>
+                    </div>
+                    <span class="nav__list-line nav__list-line--hidden"></span>
+                    <a href="#"><img class="logo-img" src="img/icon/mobile_logo.png" alt=""></a>
+                </div>
                 <ul class="nav__list">
-                    <li class="nav__list-item" ><button><span class="icon_burger"></span></button></li>
-                    <li class="nav__list-line nav__list-line--hidden"></li>
-                    <li class="nav__list-logo"><a href="#"><img src="img/icon/mobile_logo.png" alt=""></a></li>
-                </ul>
-                <ul class="nav__list">
-                    <li class="nav__list-item nav__list-line--hidden"><button><span class="icon-tel"></span></button></li>
-                    <li class="nav__list-item nav__list-line--hidden"><button><span class="icon-message"></span></button></li>
-                    <li class="nav__list-item nav__list-line--hidden"><button><span class="icon-user"></span></button></li>
+                    <li class="nav__list-line--hidden"><button class="icon-button"><span class="icon-tel"></span></button></li>
+                    <li class="nav__list-line--hidden"><button class="icon-button"><span class="icon-message"></span></button></li>
+                    <li class="nav__list-line--hidden"><button class="icon-button"><span class="icon-user"></span></button></li>
                     <li class="nav__list-line"></li>
-                    <li class="nav__list-item"><button><span class="icon-work"></span></button></li>
-                    <li class="nav__list-item"><button><span class="icon-loupe"></span></button></li>
+                    <li><button class="icon-button"><span class="icon-work"></span></button></li>
+                    <li><button class="icon-button"><span class="icon-loupe"></span></button></li>
                 </ul>
             </nav>
         </div>
@@ -34,14 +73,14 @@
                 <h1 class="main__header-title">Услуги и сервисы</h1>
                 <nav class="main__header-nav main__header-nav--hidden">
                     <ul class="main__header-list">
-                        <li class="main__header-item"><button class="main__header-btn" type="button"><span class="text-btn">Оставить заявку</span><span class="icon-work main__icon"></span></button></li>
-                        <li class="main__header-item"><button class="main__header-btn" type="button"><span class="text-btn">Статус ремонта</span><span class="icon-loupe main__icon"></span></button></li>
+                        <li class="main__header-item"><button class="main__header-btn" type="button"><span class="text-btn">Оставить заявку</span><span class="icon-work icon-button"></span></button></li>
+                        <li class="main__header-item"><button class="main__header-btn" type="button"><span class="text-btn">Статус ремонта</span><span class="icon-loupe icon-button"></span></button></li>
                     </ul>
                 </nav>
             </div> 
             <nav class="main__nav">
                 <ul class="main__nav-list">
-                    <li class="main__nav-item main__nav-item--active"><a class="main__nav-link" href="#">Ремонтируемые бренды</a></li>
+                    <li class="main__nav-item main__nav-item--active"><a class="main__nav-link main__nav-link--active" href="#">Ремонтируемые бренды</a></li>
                     <li class="main__nav-item"><a class="main__nav-link" href="#">Ремонтируемые устройства</a></li>
                     <li class="main__nav-item"><a class="main__nav-link" href="#">Цены на услугу</a></li>
                     <li class="main__nav-item"><a class="main__nav-link" href="#">Адреса сервисных центров</a></li>
@@ -60,7 +99,7 @@
                             количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь,
                             советуют нас родным и близким.</p>
                     </div>
-                    <button class="section__btn section__btn-read" type="button">
+                    <button class="btn-read" type="button">
                         Читать далее
                     </button> 
                 </div>
