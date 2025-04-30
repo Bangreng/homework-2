@@ -510,7 +510,7 @@ body{
         flex-wrap: wrap;
         column-gap: 24px;
         row-gap: 16px;
-        /* transform: translate3d(0,0,0) !important; */
+        transform: translate3d(0,0,0) !important;
     }
 
     .repaired-devices__item{
