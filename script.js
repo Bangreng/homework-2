@@ -29,16 +29,12 @@ const swipperPagination = document.querySelector('.swiper-pagination');
     if(btnRepaired.innerHTML === 'Показать все'){
       btnRepaired.textContent = 'Cкрыть';
       imgBtnRepaired.style.transform = 'rotate(180deg)';
-      imgBtnRepaired.style.backgroundPosition = 'right';
       swiperRepaired.style.maxHeight = '100%';
     } else{
       btnRepaired.textContent = 'Показать все';
       imgBtnRepaired.style.transform = 'rotate(0deg)';
-      imgBtnRepaired.style.backgroundPosition = 'left';
       swiperRepaired.style.maxHeight = '160px'
-      
     }
-
   })
 
 
