@@ -336,7 +336,8 @@ body{
     overflow: hidden;
 }
 
-.btn-read{
+.btn-functional{
+    display: none;
     font-family: 'TT Lakes Medium', 'Arial', sans-serif;
     border: none;
     background: none;
@@ -344,16 +345,20 @@ body{
     line-height: 24px;
     font-size: 16px;
     cursor: pointer;
-    font-weight: 500;
+    white-space: nowrap;
+
 }
 
-.btn-read::before{
-    content: url(./img/icon/icon-bottom.png);
+.btn-functional__arrow1,
+.btn-functional__arrow2{
     display: inline-block;
-    width: 24px;
-    margin-right: 8px;
-    vertical-align: middle;
+    background-image: url(./img/icon/icon-bottom.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    transform-origin: center;
+    padding-left: 24px;
 }
+
 
 .main__section-image{
     margin-left: -16px;
@@ -370,7 +375,7 @@ body{
     letter-spacing: -0.2px;
     text-transform: uppercase;
     color: #7E7E82;
-    padding: 16px 16px 0;
+    padding: 16px 16px;
     background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
     margin: 0 -16px 16px;
     border-top: 1px solid #D9FFF5;
@@ -385,7 +390,7 @@ body{
 .repaired-devices{
     position: relative;
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 16px;
 }
 
 .repaired-devices__item {
@@ -442,6 +447,7 @@ body{
 .swiper-pagination-bullet-active{
     background: #B5B6BC;
 }
+
 
 @media (max-width: 767px){
 
@@ -511,6 +517,8 @@ body{
         column-gap: 24px;
         row-gap: 16px;
         transform: translate3d(0,0,0) !important;
+        max-height: 160px;
+        overflow-y: hidden;
     }
 
     .repaired-devices__item{
@@ -522,6 +530,10 @@ body{
         padding: 15px 24px;
         margin: 0 -24px 24px;
         
+    }
+
+    .btn-functional{
+        display: flex;
     }
     
 
