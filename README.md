@@ -1,1 +1,1 @@
-[Ссылка на Github page](https://bangreng.github.io/homework-2/)
+[Ссылка на Github page](https://bangreng.github.io/homework-3/)
